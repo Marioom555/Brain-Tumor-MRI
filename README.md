@@ -12,8 +12,8 @@ This project utilizes **Deep Learning** techniques to classify **brain tumor MRI
 
 ### 🖼️ Sample MRI Images
 
-![Sample MRI Images](https://github.com/user-attachments/assets/your-image-link)
-
+![Image](https://github.com/user-attachments/assets/6242799b-6a93-4cb2-a1f1-b3ba818fce17)
+![Image](https://github.com/user-attachments/assets/61dbc0ca-6beb-4dbd-b6c2-bdc788e96559)
 ## 🏗️ Tech Stack  
 ### 🔹 **Deep Learning Framework**  
 - **PyTorch** – For training and testing the CNN model.  
@@ -55,4 +55,4 @@ This project utilizes **Deep Learning** techniques to classify **brain tumor MRI
 | Recall | **96.1%** |
 
 📌 **Confusion Matrix:**  
-![Confusion Matrix](https://github.com/user-attachments/assets/confusion_matrix.png)
+![Image](https://github.com/user-attachments/assets/0de3eee6-60ee-4ed6-b6e8-6ffe5853fd9b)
