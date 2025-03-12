@@ -1,70 +1,51 @@
-# 🧠 Brain Tumor Detection & Mask R-CNN Segmentation
+# 🧠 Brain Tumor MRI Classification
 
 ## 📌 About the Project  
-This project utilizes **Deep Learning and Computer Vision** for two main objectives:
-- **Brain Tumor Classification** using **CNNs** on MRI images.
-- **Object Segmentation** with **Mask R-CNN** for instance detection in videos.
-
-It employs **PyTorch for MRI classification** and **PixelLib (Mask R-CNN) for segmentation**, making it a powerful tool for **medical imaging analysis**.
+This project utilizes **Deep Learning** techniques to classify **brain tumor MRI images** into categories using a **Convolutional Neural Network (CNN)**. It processes MRI scans, trains a model to detect abnormalities, and evaluates its performance with a confusion matrix.
 
 ## 🚀 Features  
-### 🔹 **Brain Tumor MRI Classification**  
-- **Pretrained CNN model** for accurate tumor detection.
-- **MRI dataset loading & preprocessing** for deep learning.
-- **Train & Evaluate using PyTorch** with accuracy tracking.
-- **Confusion Matrix Visualization** to analyze model performance.
+- **MRI Data Processing** – Load and preprocess MRI images.  
+- **CNN Model for Tumor Classification** – A deep learning model trained to classify brain tumor images.  
+- **Train and Test Pipeline** – Automatic model training and validation using PyTorch.  
+- **Visualization Tools** – Display sample images, confusion matrix, and predictions.  
+- **Model Saving & Loading** – Save and reuse trained models for predictions.  
 
-### 🔹 **Mask R-CNN Instance Segmentation**  
-- **Object segmentation** in videos using **pretrained Mask R-CNN**.
-- **Bounding boxes & masks** for visualizing detections.
-- **OpenCV integration** for real-time processing.
+### 🖼️ Sample MRI Images
+
+![Sample MRI Images](https://github.com/user-attachments/assets/your-image-link)
 
 ## 🏗️ Tech Stack  
-### **🔹 Deep Learning & Computer Vision**  
-- **PyTorch** – For MRI classification model.
-- **TensorFlow & PixelLib** – For instance segmentation.
-- **OpenCV** – Video processing.
-- **Matplotlib & Seaborn** – Data visualization.
+### 🔹 **Deep Learning Framework**  
+- **PyTorch** – For training and testing the CNN model.  
 
-### **🔹 Dataset & Model**  
-- **MRI Dataset** – Brain tumor images.
-- **Mask R-CNN (COCO weights)** – Pretrained instance segmentation model.
+### 🔹 **Data Processing & Visualization**  
+- **Torchvision & PIL** – Image transformation and augmentation.  
+- **Matplotlib & Seaborn** – Data visualization, including confusion matrices.
+- 
 
 ## 🛠️ Setup & Installation  
-1. **Clone the repository:**  
+1. Clone the repository:  
     ```bash
-    git clone https://github.com/your-repo/brain-tumor-detection.git
-    cd brain-tumor-detection
+    git clone https://github.com/your-repo/brain-tumor-classification.git
+    cd brain-tumor-classification
     ```
-
-2. **Create a virtual environment:**  
+2. Create and activate a virtual environment:  
     ```bash
-    conda create -n tumor-detection python=3.8 -y
+    conda create -n brain_tumor python=3.11 -y
+    conda activate brain_tumor
     ```
-
-3. **Activate the environment:**  
-    ```bash
-    conda activate tumor-detection
-    ```
-
-4. **Install dependencies:**  
+3. Install dependencies:  
     ```bash
     pip install -r requirements.txt
     ```
-
-5. **Download Mask R-CNN model weights:**  
-    - Get `mask_rcnn_coco.h5` from [here](https://github.com/matterport/Mask_RCNN/releases) and place it in the project directory.
-
-6. **Run MRI classification training:**  
+4. Run the training script:  
     ```bash
-    python train_mri.py
+    python train.py
     ```
-
-7. **Run instance segmentation on a video:**  
+5. Run the evaluation script:  
     ```bash
-    python segment_video.py --input your_video.mp4
+    python evaluate.py
     ```
-
 ## 📊 Results & Visualizations  
 ### **1️⃣ MRI Brain Tumor Classification Results**  
 | Metric | Value |
@@ -75,17 +56,3 @@ It employs **PyTorch for MRI classification** and **PixelLib (Mask R-CNN) for se
 
 📌 **Confusion Matrix:**  
 ![Confusion Matrix](https://github.com/user-attachments/assets/confusion_matrix.png)
-
-### **2️⃣ Mask R-CNN Instance Segmentation Output**  
-![Mask R-CNN Results](https://github.com/user-attachments/assets/mask_rcnn_output.png)
-
-## 🎓 Team Members  
-- **[Your Name]**  
-- **[Your Team Members]**  
-
-## 🙌 Acknowledgments  
-Special thanks to **Dr. Mohamed Zorkany** for his mentorship throughout this project.
-
-## 💡 Contributions & Feedback  
-We welcome contributions! Open issues, submit PRs, or reach out for collaboration. 🚀
-
