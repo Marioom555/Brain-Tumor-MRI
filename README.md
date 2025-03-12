@@ -10,7 +10,7 @@ This project utilizes **Deep Learning** techniques to classify **brain tumor MRI
 - **Visualization Tools** – Display sample images, confusion matrix, and predictions.  
 - **Model Saving & Loading** – Save and reuse trained models for predictions.  
 
-### 🖼️ Sample MRI Images
+### 🖼️ Sample MRI Classified Images
 
 ![Image](https://github.com/user-attachments/assets/6242799b-6a93-4cb2-a1f1-b3ba818fce17)
 ![Image](https://github.com/user-attachments/assets/61dbc0ca-6beb-4dbd-b6c2-bdc788e96559)
